@@ -14,5 +14,11 @@ def profile(user_name):
     return "{name}さんのプロフィール画面です".format(name=user_name)
 
 
+@app.route("/profile1/<string:user_name>")
+def profile1(user_name):
+    print("[taskExecutorXXX-1] ERROR [CollectEvent.java:109 collectEvent] - [NoData MongoDB tenant : ob7bf dataType : EV0000000001 from : 2020-03-03 14:57:00 to : 2020/03/03 14:58:00]")
+    return "{name}さんのプロフィール画面です".format(name=user_name)
+
+
 if __name__ == "__main__":
     app.run()
