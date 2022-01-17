@@ -10,7 +10,7 @@ def hello():
 
 @app.route("/profile/<string:user_name>")
 def profile(user_name):
-    print("Hello World")
+    print("[pool-3-thread-1] INFO  [SimpleJobLauncher.java:133 run] - [Job: [SimpleJob: [name=jobXXXThread]] launched with the following parameters: [{time=1583247660000}]]")
     return "{name}さんのプロフィール画面です".format(name=user_name)
 
 
