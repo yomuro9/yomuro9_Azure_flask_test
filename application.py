@@ -8,7 +8,7 @@ def hello():
     return "Hello World!"
 
 
-@app.route("/profilr/<string:user_name>")
+@app.route("/profile/<string:user_name>")
 def profile(user_name):
     return "{name}さんのプロフィール画面です".format(name=user_name)
 
