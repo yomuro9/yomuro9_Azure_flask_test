@@ -10,6 +10,7 @@ def hello():
 
 @app.route("/profile/<string:user_name>")
 def profile(user_name):
+    print("Hello World")
     return "{name}さんのプロフィール画面です".format(name=user_name)
 
 
