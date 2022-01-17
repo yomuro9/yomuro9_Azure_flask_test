@@ -14,14 +14,14 @@ def profile(user_name):
     return "{name}さんのプロフィール画面です".format(name=user_name)
 
 
-@app.route("/log1")
+@app.route("/log1/")
 def log1():
     data = "[pool-3-thread-1] INFO  [SimpleJobLauncher.java:133 run] - [Job: [SimpleJob: [name=jobXXXThread]] launched with the following parameters: [{time=1583247660000}]]"
     print(data)
     return data
 
 
-@app.route("/log2")
+@app.route("/log2/")
 def log1():
     data = "[taskExecutorXXX-1] ERROR [CollectEvent.java:109 collectEvent] - [NoData MongoDB tenant : ob7bf dataType : EV0000000001 from : 2020-03-03 14:57:00 to : 2020/03/03 14:58:00]"
     print(data)
